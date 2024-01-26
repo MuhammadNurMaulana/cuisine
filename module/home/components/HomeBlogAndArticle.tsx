@@ -45,6 +45,7 @@ export default async function HomeBlogAndArticle() {
           </div>
         </div>
       </div>
+      <h1>test</h1>
     </Container>
   );
 }
