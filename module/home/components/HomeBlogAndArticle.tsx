@@ -8,11 +8,11 @@ import React from "react";
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default async function HomeBlogAndArticle() {
-  // const menu = await getData(`${process.env.WEB_URL}/api/menu`);
-  // const menuHeader = await getData(`${process.env.WEB_URL}/api/menuHeader`);
+  const menu = await getData(`${process.env.WEB_URL}/api/menu`);
+  const menuHeader = await getData(`${process.env.WEB_URL}/api/menuHeader`);
   return (
     <Container>
-      {/* <div className="w-[90%] md:w-full mx-auto">
+      <div className="w-[90%] md:w-full mx-auto">
         <h1 className={`mt-16 mb-12 ${playfair.className} text-4xl`}>Our Blog & Articles</h1>
 
         <div className="grid lg:grid-cols-2 gap-4">
@@ -44,8 +44,7 @@ export default async function HomeBlogAndArticle() {
             )}
           </div>
         </div>
-      </div> */}
-      <h1>Test</h1>
+      </div>
     </Container>
   );
 }
