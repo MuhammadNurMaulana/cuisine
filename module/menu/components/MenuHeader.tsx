@@ -9,45 +9,45 @@ import React, { useEffect, useState } from "react";
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default function MenuHeader() {
-  // const [mainMenu, setMainMenu] = useState([]);
-  // const [menu, setMenu] = useState([]);
-  // const [activeCategory, setActiveCategory] = useState("All");
-  // const [dataFetched, setDataFetched] = useState(false);
+  const [mainMenu, setMainMenu] = useState([]);
+  const [menu, setMenu] = useState([]);
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [dataFetched, setDataFetched] = useState(false);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const menuData = await getData(`http://localhost:3000/api/listMenu`);
-  //       setMenu(menuData.data);
-  //       setMainMenu(menuData.data);
-  //       setDataFetched(true);
-  //     } catch (error) {
-  //       console.error("Error Fetch Data", error);
-  //     }
-  //   };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const menuData = await getData(`${process.env.WEB_URL}/api/listMenu`);
+        setMenu(menuData.data);
+        setMainMenu(menuData.data);
+        setDataFetched(true);
+      } catch (error) {
+        console.error("Error Fetch Data", error);
+      }
+    };
 
-  //   if (!dataFetched) {
-  //     fetchData();
-  //   }
-  // }, [dataFetched]);
+    if (!dataFetched) {
+      fetchData();
+    }
+  }, [dataFetched]);
 
-  // const menuItemsSet = new Set(mainMenu.map((val: any) => val.category));
-  // const menuItems = Array.from(menuItemsSet);
+  const menuItemsSet = new Set(mainMenu.map((val: any) => val.category));
+  const menuItems = Array.from(menuItemsSet);
 
-  // const filterItems = (cat: any) => {
-  //   if (cat === "All") {
-  //     setMenu(mainMenu);
-  //   } else {
-  //     const newItems = mainMenu.filter((newVal: any) => newVal.category === cat);
-  //     setMenu(newItems);
-  //   }
+  const filterItems = (cat: any) => {
+    if (cat === "All") {
+      setMenu(mainMenu);
+    } else {
+      const newItems = mainMenu.filter((newVal: any) => newVal.category === cat);
+      setMenu(newItems);
+    }
 
-  //   setActiveCategory(cat);
-  // };
+    setActiveCategory(cat);
+  };
 
   return (
     <Container>
-      {/* <div className="mt-12 md:mt-32 w-[90%] md:w-full mx-auto flex flex-col gap-12">
+      <div className="mt-12 md:mt-32 w-[90%] md:w-full mx-auto flex flex-col gap-12">
         <div className="w-full md:w-[50%] mx-auto flex flex-col gap-2 items-center">
           <h1 className={`${playfair.className} text-5xl`}>Our Menu</h1>
           <p className="text-center">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
@@ -79,8 +79,7 @@ export default function MenuHeader() {
               </div>
             )
         )}
-      </div> */}
-      <h1>Test</h1>
+      </div>
     </Container>
   );
 }
