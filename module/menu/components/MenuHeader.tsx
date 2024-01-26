@@ -17,7 +17,7 @@ export default function MenuHeader() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const menuData = await getData(`${process.env.WEB_URL}/api/listMenu`);
+        const menuData = await getData(`https://restaurant-cuisine-ruddy.vercel.app/api/listMenu`);
         setMenu(menuData.data);
         setMainMenu(menuData.data);
         setDataFetched(true);
