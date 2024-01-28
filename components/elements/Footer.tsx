@@ -21,16 +21,16 @@ export default function Footer() {
             </div>
             <p>In the new era of technology we look a in the future with certainty and pride to for our company and.</p>
             <div className="flex items-center gap-3">
-              <a href="/" className="bg-primary p-2 rounded-full text-white">
+              <a href="https://github.com/MuhammadNurMaulana" target="_blank" className="bg-primary p-2 rounded-full text-white">
                 <BsGithub width={15} height={15} />
               </a>
-              <a href="/" className="bg-primary p-2 rounded-full text-white">
+              <a href="https://www.tiktok.com/@elitescr?_t=8jPElmwnnta&_r=1" target="_blank" className="bg-primary p-2 rounded-full text-white">
                 <BsTiktok width={15} height={15} />
               </a>
-              <a href="/" className="bg-primary p-2 rounded-full text-white">
+              <a href="https://wa.me/6283137446693" target="_blank" className="bg-primary p-2 rounded-full text-white">
                 <BsWhatsapp width={15} height={15} />
               </a>
-              <a href="/" className="bg-primary p-2 rounded-full text-white">
+              <a href="https://www.instagram.com/ctizz4?igsh=amw2ZHA1YmtzNWtm" target="_blank" className="bg-primary p-2 rounded-full text-white">
                 <BsInstagram width={15} height={15} />
               </a>
             </div>
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="grid gap-8">
-          <a href={"/"} className="text-center font-bold">
+          <a href="https://www.instagram.com/ctizz4?igsh=amw2ZHA1YmtzNWtm" target="_blank" className="text-center font-bold">
             Follow Us On Instagram
           </a>
           <div className="grid grid-cols-2 gap-2 w-[80%] mx-auto">

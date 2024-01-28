@@ -1,8 +1,11 @@
-export async function getData(url: any) {
-  const res = await fetch(url);
+export async function getData(url: string) {
+  const res = await fetch(url, {
+    cache: "no-store",
+  });
 
   if (!res) {
-    throw new Error("Failed to fetch data");
+    throw new Error(`Failed to fetch data`);
   }
+
   return res.json();
 }

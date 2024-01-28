@@ -4,6 +4,6 @@ export const nav: Nav = [
   { name: "Home", pathUrl: "/" },
   { name: "About", pathUrl: "/about" },
   { name: "Menu", pathUrl: "/menu" },
-  { name: "Pages", pathUrl: "/pages" },
+  { name: "Blog", pathUrl: "/pages" },
   { name: "Contact", pathUrl: "/contact" },
 ];

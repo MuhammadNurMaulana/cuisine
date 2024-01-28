@@ -6,6 +6,6 @@ export const metadata: Metadata = {
   title: `Home ${METADATA.exTitle}`,
 };
 
-export default function Home() {
+export default function HomePage() {
   return <HomeComponents />;
 }

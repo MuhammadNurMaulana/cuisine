@@ -39,7 +39,7 @@ export default function Navbar() {
       </ul>
 
       <motion.div initial={{ opacity: 0, filter: "blur(15px)", y: 50 }} whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }} viewport={{ once: true, amount: 0.5 }}>
-        <Link href={"/"} className="rounded-full py-2 px-4 border-stone-700 border">
+        <Link href={"/book"} className="rounded-full py-2 px-4 border-stone-700 border">
           Book A Table
         </Link>
       </motion.div>

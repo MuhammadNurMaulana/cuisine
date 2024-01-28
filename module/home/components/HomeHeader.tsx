@@ -19,10 +19,10 @@ export default function HomeHeader() {
         <p className={`text-center text-xl`}>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
 
         <div className="flex gap-8 ">
-          <Link href={"/"} className={`hover:bg-primary hover:text-white py-2 px-4 rounded-md`}>
+          <Link href={"/book"} className={`hover:bg-primary hover:text-white py-2 px-4 rounded-md`}>
             Book A Table
           </Link>
-          <Link href={"/"} className={`hover:bg-primary hover:text-white py-2 px-4 rounded-md`}>
+          <Link href={"/menu"} className={`hover:bg-primary hover:text-white py-2 px-4 rounded-md`}>
             Explore Menu
           </Link>
         </div>

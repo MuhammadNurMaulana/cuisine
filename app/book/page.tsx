@@ -1,11 +1,12 @@
 import { METADATA } from "@/common/constant/metadata.";
-import AboutComponents from "@/module/about";
+import BookComponents from "@/module/book";
 import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: `About ${METADATA.exTitle}`,
+  title: `Book ${METADATA.exTitle}`,
 };
-export default function AboutPage() {
-  return <AboutComponents />;
+
+export default function BookPage() {
+  return <BookComponents />;
 }
