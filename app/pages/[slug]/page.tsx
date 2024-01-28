@@ -9,12 +9,12 @@ import { BiArrowBack } from "react-icons/bi";
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default async function BlogDetails({ params }: { params: { slug: string } }) {
-  // const blogs = await getData(`http://localhost:3000/api/articles?id=${params.slug}`);
-  // const blog = blogs.data;
+  const blogs = await getData(`${process.env.WEB_URL}/api/articles?id=${params.slug}`);
+  const blog = blogs.data;
   return (
     <ContainerPages>
       <div className="w-[90%] md:w-[70%] mx-auto grid gap-4 md:py-32">
-        {/* <Link href="/pages" className="rounded-full text-xl bg-primary text-white p-2 max-w-max mb-4">
+        <Link href="/pages" className="rounded-full text-xl bg-primary text-white p-2 max-w-max mb-4">
           <BiArrowBack />
         </Link>
         <h1 className={`${playfair.className} text-2xl md:text-4xl mb-4`}>{blog.title}</h1>
@@ -36,7 +36,7 @@ export default async function BlogDetails({ params }: { params: { slug: string }
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quibusdam, accusantium praesentium soluta veritatis nihil magni repellendus porro sequi commodi vel cupiditate doloribus quo mollitia possimus sapiente est eius beatae?
         </p>
-        <Image src={blog.image2} alt={`${blog.title} 2`} width={600} height={600} className="mx-auto rounded-xl" /> */}
+        <Image src={blog.image2} alt={`${blog.title} 2`} width={600} height={600} className="mx-auto rounded-xl" />
       </div>
     </ContainerPages>
   );
