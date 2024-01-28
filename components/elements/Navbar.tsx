@@ -19,10 +19,10 @@ export default function Navbar() {
         <h1 className={`${playfair.className} text-3xl lg:text-4xl`}>Cuisine</h1>
       </motion.div>
 
-      <ul className="flex items-center justify-center gap-3 fixed bottom-12 rounded-xl md:static bg-white p-2 left-3 right-3 z-50">
+      <ul className="flex items-center justify-center gap-3 fixed bottom-4 rounded-xl md:static bg-white p-2 left-3 right-3 z-50">
         {nav.map((nav, index) => (
           <motion.li
-            initial={{ opacity: 0, filter: "blur(15px)", y: 50 }}
+            initial={{ opacity: 0, filter: "blur(15px)", y: 20 }}
             whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{ delay: 1 * index }}
             viewport={{ once: true, amount: 0.8 }}
