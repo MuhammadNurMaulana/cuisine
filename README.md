@@ -1,6 +1,6 @@
 # Cuisine Restaurant 🚀
 
-### [Linder Demo](https://restaurant-cuisine-ruddy.vercel.app/)
+### [Cuisine Demo](https://restaurant-cuisine-ruddy.vercel.app/)
 
 **Cuisine Restaurant**, a construction company with more than 100 projects and beautiful designs. This website was built using NextJs framework and TailwindCSS.
 
