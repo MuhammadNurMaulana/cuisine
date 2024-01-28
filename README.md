@@ -2,7 +2,7 @@
 
 ### [Cuisine Demo](https://restaurant-cuisine-ruddy.vercel.app/)
 
-**Cuisine Restaurant**, a construction company with more than 100 projects and beautiful designs. This website was built using NextJs framework and TailwindCSS.
+**Cuisine Restaurant**, This website is created to introduce a restaurant with unique flavors and to provide quality food and service akin to a five-star restaurant. .
 
 ## Preview
 Checkout this amazing website [here!](https://restaurant-cuisine-ruddy.vercel.app/)
