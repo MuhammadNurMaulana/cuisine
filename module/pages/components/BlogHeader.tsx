@@ -7,7 +7,7 @@ import React from "react";
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" });
 
 export default async function BlogHeader() {
-  // const blog = await getData(`http://localhost:3000/api/articles`);
+  const blog = await getData(`${process.env.WEB_URL}/api/articles`);
   return (
     <div>
       <div className="w-[90%] mx-auto md:mt-32">
@@ -15,7 +15,7 @@ export default async function BlogHeader() {
         <p className="text-center mt-4">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
       </div>
 
-      {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-16 md:w-[80%] mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-16 md:w-[80%] mx-auto">
         {blog?.data.map((item: any) => (
           <Link href={`/pages/${item.id}`} key={item.id} className="w-[80%] md:w-full mx-auto">
             <Image src={item.image} alt={item.title} width={400} height={400} className="rounded-md" />
@@ -25,7 +25,7 @@ export default async function BlogHeader() {
             </div>
           </Link>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
