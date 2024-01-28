@@ -50,13 +50,13 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="md:mt-32">
+    <div className="md:mt-32 mt-8">
       <div className="w-[80%] md:w-1/2 mx-auto">
         <h1 className={`${playfair.className} text-3xl md:text-5xl text-center mb-4`}>Contact Us</h1>
         <p className="text-center">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
       </div>
       <form onSubmit={submit} className="w-[70%] md:w-[60%] mx-auto mt-12">
-        <div className="grid mx-auto gap-12">
+        <div className="grid mx-auto gap-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col gap-3">
               <label htmlFor="name">Name</label>
