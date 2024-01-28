@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cuisine Restaurant 🚀
+
+### [Linder Demo](https://restaurant-cuisine-ruddy.vercel.app/)
+
+**Cuisine Restaurant**, a construction company with more than 100 projects and beautiful designs. This website was built using NextJs framework and TailwindCSS.
+
+## Preview
+Checkout this amazing website [here!](https://restaurant-cuisine-ruddy.vercel.app/)
+
+<img width="1440" alt="linder-demo" src="https://firebasestorage.googleapis.com/v0/b/maulana-cuisine.appspot.com/o/cuisine-ui%2FScreenshot%202024-01-28%20172815.png?alt=media&token=3eb953a4-aeb2-40b9-bcd1-d96e5ecd431e">
 
 ## Getting Started
 
@@ -10,8 +19,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
